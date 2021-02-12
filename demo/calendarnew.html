@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+div {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month div {
+  margin: 0;
+  padding: 0;
+}
+
+.month div div {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays div {
+  display: inline-block;
+  width: 14.00%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  height:100%;
+}
+
+.days div {
+  list-style-type: none;
+  display: inline-block;
+  width: 14.00%;
+  height:20%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days div .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays div, .days div {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays div, .days div {width: 12.5%;}
+  .days div .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays div, .days div {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<div class="month">      
+  <div>
+    <div class="prev">&#10094;</div>
+    <div class="next">&#10095;</div>
+    <div>
+      August<br>
+      <span style="font-size:18px">2017</span>
+    </div>
+  </div>
+</div>
+
+<div class="weekdays">
+  <div>Mo</div>
+  <div>Tu</div>
+  <div>We</div>
+  <div>Th</div>
+  <div>Fr</div>
+  <div>Sa</div>
+  <div>Su</div>
+</div>
+
+<div class="display:flex days">  
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div><span class="active">10</span></div>
+  <div>11</div>
+  <div>12</div>
+  <div>13</div>
+  <div>14</div>
+  <div>15</div>
+  <div>16</div>
+  <div>17</div>
+  <div>18</div>
+  <div>19</div>
+  <div>20</div>
+  <div>21</div>
+  <div>22</div>
+  <div>23</div>
+  <div>24</div>
+  <div>25</div>
+  <div>26</div>
+  <div>27</div>
+  <div>28</div>
+  <div>29</div>
+  <div>30</div>
+  <div>31</div>
+</div>
+
+</body>
+</html>
