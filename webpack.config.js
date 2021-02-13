@@ -22,7 +22,7 @@ module.exports = {
     filename: isProduction ? '[name].min.js' : '[name].js',
     libraryTarget: 'umd',
     libraryExport: 'default',
-    library: 'CoCreatecalendar',
+    library: ['CoCreate', 'calendar'],
     globalObject: "this",
   },
 
